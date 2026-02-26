@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div style="text-align: right;">
+	<img src="photos\Logo.png" width="200px" height="auto">
+	<h1 id="home"> White Mirror Publishing House </h1>
+	<p> An independent publisher of board games. </p>
+</div>
+<h1> White Mirror Publishing House Market </h1>
+
+<h1> Our products: </h1>
+
+	<img  src="photos\Carcassonne (1).webp" width="auto" height="300px"> 
+	<img  src="photos\Carcassonne (2).webp" width="auto" height="300px"> 
+	<img  src="photos\Carcassonne (3).webp" width="auto" height="300px"> <br>
+	<p> Carcassonne: cost of 9500 dram &emsp; <button onclick="Carcassonne()"> add to the cart</button></p><br>
+
+	<img  src="photos\Machi Koro (1).webp" width="auto" height="300px"> 
+	<img  src="photos\Machi Koro (2).webp" width="auto" height="300px"> 
+	<img  src="photos\Machi Koro (3).webp" width="auto" height="300px"> <br>
+	<p> Machi Koro: cost of 6000 dram &emsp;<button onclick="Machi()"> add to the cart</button></p><br>
+
+	<img  src="photos\warhammer (1).webp" width="auto" height="300px"> 
+	<img  src="photos\warhammer (2).webp" width="auto" height="300px"> 
+	<img  src="photos\warhammer (3).webp" width="auto" height="300px"> <br>
+	<p> Age of Sigmar: Skaventide: cost of 140000 dram &emsp;<button onclick="warhammer()"> add to the cart</button></p><br>
+
+	<img  src="photos\Rokugan (1).webp" width="auto" height="300px"> 
+	<img  src="photos\Rokugan (2).webp" width="auto" height="300px"> 
+	<img  src="photos\Rokugan (3).webp" width="auto" height="300px"> <br>
+	<p> Battle for Rokugan: cost of 17000 dram &emsp;<button onclick="Rokugan()"> add to the cart</button></p><br>
+
+	<img  src="photos\RS (1).webp" width="auto" height="300px">
+	<img  src="photos\RS (2).webp" width="auto" height="300px">
+	<img  src="photos\RS (3).webp" width="auto" height="300px"> <br>
+	<p> Rising Sun: cost of 53000 dram &emsp;<button onclick="RS()"> add to the cart</button></p><br>
+
+	<img  src="photos\GoT (1).webp" width="auto" height="300px">
+	<img  src="photos\GoT (2).webp" width="auto" height="300px">
+	<img  src="photos\GoT (3).webp" width="auto" height="300px"> <br>
+	<p> A Game of Thrones: The Board Game (Second Edition): cost of 29000 dram &emsp;<button onclick="GoT()"> add to the cart</button></p><br>
+
+	<button onclick="sum()"> click to see the overall price</button>
+	<p id="Carcassnumber"></p>
+	<p id="Machinumber"></p>
+	<p id="Warhammernumber"></p>
+	<p id="Rokugannumber"></p>
+	<p id="RSnumber"></p>
+	<p id="GoTnumber"></p> 
+	<p id="allnumber"></p>
+	<p id="total" style="font-weight:bold;"> Total price: </p>
+
+<h2> You can pick up your order in our store at Yerevan, Northern Avenue, 5. Or leave your details for the delivery process. </h2>
+<h3> User details</h3>
+
+<form>
+	<fieldset>
+		<legend> Personal information </legend>
+			<p> Name <input type="text" id="NAME" required="required" name="name"></p>
+			<p> Phone number <input type="number" name="number"></p>
+			<p> Email adress <input type="email" name="adress"></p>
+	</fieldset> 
+<h2> Adress for delivery </h2>
+	<fieldset>
+		<legend> Address information </legend>
+			<p> Address line 1<input type="text"  name="address1"></p>
+			<p> Adress line 2<input type="text" name="adress2"></p>
+			<p> Post code <input type="number" name="post code"></p>
+	</fieldset>
+<h3> Comment on delivery: </h3>
+	<fieldset>
+		<legend> Comment </legend>
+			<textarea> </textarea>
+	</fieldset> <br>
+	<button onclick="order()"> Submit </button>
+</form>
+
+<br><br>
+<form action="main.html" method="post">
+	<button id="market" onclick="()"> Press to go back to Main page. </button>  
+</form>
+
+<h6 style="text-align: right;"> Website written by CEO of White Mirror Arutyun Yagubyan and CTO of White Mirror Rafayel Guloyan</h6>
+<script type="text/javascript" src="java.js"></script>
+</body>
+</html>

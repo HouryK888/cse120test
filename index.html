@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div id="menu">
+	<ul>
+		<li> <a href="#home"> Home </a> </li>
+		<li> <a href="#about"> About us</a></li>
+		<li> <a href="#service"> Our products </a></li>
+		<li><a href="#market"> Link on our Market </a></li>
+		<li><a href="#forms"> Publishing Service </a></li>
+	</ul>
+</div>
+
+<div id="content">
+
+	<div style="text-align: right;">
+		<img src="photos\Logo.png" width="200px" height="auto">
+		<h1 id="home"> White Mirror Publishing House </h1>
+		<p> An independent publisher of board games. </p>
+	</div>
+
+	<div id="movement">
+		<img class="Euro" src="photos\Carcassonne (1).webp" width="30%" height="auto">
+		<img class="Euro" src="photos\Machi Koro (1).webp" width="30%" height="auto">
+		<img class="Strategy" src="photos\warhammer (1).webp" width="30%" height="auto">
+		<img class="Strategy" src="photos\Rokugan (1).webp" width="30%" height="auto">
+		<img class="Strategy" src="photos\RS (1).webp" width="30%" height="auto">
+		<img class="Strategy" src="photos\GoT (1).webp" width="30%" height="auto">
+		<img class="Production" src="photos\production (1).jpg" width="39%" height="auto">
+		<img class="Production" src="photos\production (2).jpg" width="39%" height="auto">
+		<img class="Production" src="photos\production (3).webp" width="39%" height="auto">
+	</div>
+
+	<h1 id="about"> About us </h1>
+
+	<p> We are a publisher and seller of board games. The company has been operating since 2026 and provides distribution services for board games in Armenia. At the moment, we have one office in Yerevan, where we have a printing station next to the store. At the moment, our young publishing house is looking for game designers who could offer original ideas for our own real games, for more information, see the publishing services section. We also have an assortment of games of different genres, which can be found in the our products section. Our store provides delivery within Armenia. </p>
+
+	<h1 id="service"> Our products </h1>
+
+		<p> Machi Koro (6000 dram) <a href="https://boardgamegeek.com/boardgame/143884/machi-koro"> Info on BBG </a> </p>
+		<p> Carcassonne (9500 dram) <a href="https://boardgamegeek.com/boardgame/822/carcassonne"> Info on BBG </a></p> 
+		<p> Age of Sigmar: Skaventide (140000 dram) <a href="https://boardgamegeek.com/boardgame/423697/warhammer-age-of-sigmar-skaventide"> Info on BBG </a></p>
+		<p> Battle for Rokugan (17000 dram) <a href="https://boardgamegeek.com/boardgame/234477/battle-for-rokugan"> Info on BBG </a></p>
+		<p> A Game of Thrones: The Board Game (Second Edition) (29000 dram) <a href="https://boardgamegeek.com/boardgame/103343/a-game-of-thrones-the-board-game-second-edition/videos/all"> Info on BBG </a></p>
+		<p> Rising Sun (53000 dram) <a href="https://boardgamegeek.com/boardgame/205896/rising-sun"> Info on BBG </a></p>
+
+	<form action="market.html" method="post">
+		<button id="market" onclick="()"> Press to go to market! </button>  
+	</form>
+
+	<h1 id="forms"> Publishing Service </h1>
+	<p> Share your ideas, We are looking for game designers! Help us make your dream game a reality. We help you create your own projects. Write down your ideas and we will contact you. Using our printing facilities, we can develop your idea and turn it into a real game! </p>
+
+	<form> 
+		<h3> About you </h3>
+			<fieldset>
+				<legend> Personal information </legend>
+					<p> Name <input id='NAME' type="text" required="required" name="name"></p>
+					<p> Phone number <input type="number" name="number"></p>
+					<p> Email adress <input type="email" name="adress"></p>
+			</fieldset> 
+		<h3> Description </h3>
+			<fieldset>
+					<legend> Describe your idea! </legend>
+					<textarea> </textarea>
+			</fieldset> 
+	        
+	    <button onclick="idea()"> Submit </button>         
+	</form>
+
+
+</div>
+<br><br>
+<h6 style="text-align: right;"> Website written by CEO of White Mirror Arutyun Yagubyan and CTO of White Mirror Rafayel Guloyan</h6>
+
+<script type="text/javascript" src="java.js"></script>
+</body>
+</html>
